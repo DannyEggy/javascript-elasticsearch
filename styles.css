@@ -1,0 +1,155 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topnav {
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    margin-left: 25px;
+  }
+
+  h4{
+    margin: 0;
+    margin-right: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 8px;
+    width: 350px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  #searchResultsContainer {
+    width: 100%;
+    border-collapse: collapse; /* Loại bỏ khoảng trắng giữa các ô */
+    margin-top: 10px; /* Thêm khoảng cách giữa bảng và các phần khác */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+  
+  #content {
+    
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px; /* Add padding */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 31.9%;
+    height: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .card-description::before {
+    content: "Description: ";
+    color: black; /* Màu đen */
+    font-weight: bold;
+    }   
+
+  .card-description {
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  .card-authors::before{
+    content: "Author: ";
+    color: black; 
+    font-weight: bold;
+  }
+
+  .card-categories::before{
+    content: "Categories: ";
+    color: black;
+    font-weight: bold;
+  }
+
+  .card-average-rating::before{
+    content: "Average Rating: ";
+    color: black;
+    font-weight: bold;
+  }
+
+  .card-maturity-rating::before{
+    content: "Maturity Rating: ";
+    color: black;
+    font-weight: bold;
+  }
+
+  .card-published-date::before{
+    content: "Publisher Date: ";
+    color: black;
+    font-weight: bold;
+  }
+
+
+
+  .card-page-count::before{
+    content: "Page Count: ";
+    color: black;
+    font-weight: bold;
+  }
