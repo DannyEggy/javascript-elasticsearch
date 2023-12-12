@@ -1,3 +1,7 @@
+# Note
+This is just a basic implementation of elasticsearch using in JavaScript Project.
+
+
 
 # JavaScript-Elasticsearch Usage Guide
 
